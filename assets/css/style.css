@@ -8,15 +8,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'kristimedium';
+  src: url('./police/kristi-webfont.woff2') format('woff2'),
+       url('./police/kristi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
-  /* font-family: 'Devonshire', cursive; */
   font-family: 'Sue Ellen Francisco', cursive;
-  color: grey;
+  color: #b3b1b1 !important;
   font-size: 30px;
 }
 
 a {
-  color: grey;
+  color: #b3b1b1;
 }
 
 a:hover {
@@ -24,8 +32,8 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Sue Ellen Francisco', cursive;
+h2, h3, h4, h5, h6 {
+  font-family: 'Cabin Sketch', cursive;
 }
 
 /*--------------------------------------------------------------
@@ -39,11 +47,25 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #ff3c8d;
+  background:rgb(255, 60, 141);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background:#ff9ac3;
+  transition: background 0.2s ease-in-out;
+}
+
 .btn-primary {
   background-color: #ff3c8d;
   border-color: #ff3c8d;
@@ -73,20 +95,24 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #ff3c8d !important;
 }
 .cv{
-  font-family: 'Barriecito', cursive;
+  font-family: 'Cabin Sketch', cursive;
   font-size: 25px;
 }
-.back-to-top i {
-  font-size: 24px;
-  position: absolute;
-  top: 7px;
-  left: 8px;
-}
 
-.back-to-top:hover {
-  color: #fff;
-  background: #fb82b5;#ff3c8d
-  transition: background 0.2s ease-in-out;
+@media (max-width: 768px) {
+  .cv {
+    font-size: 18px;
+  }
+  .btn-primary {
+    background-color: #ff3c8d;
+    border-color: #ff3c8d;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+    font-size: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -102,18 +128,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 {
-  font-size: 26px;
+  font-size: 30px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Cabin Sketch', cursive;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #ff3c8d;
+  color:#b3b1b1;
   text-decoration: none;
 }
 
@@ -142,8 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #ffcde1f5;
-  text-shadow: 1px 1px 1px #ff3c8d;
+  color: #b3b1b1;
   padding: 15px;
   transition: 0.3s;
   font-size: 25px;
@@ -255,12 +280,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
   text-shadow: 2px 2px 5px #ff3c8d;
-  font-family: 'Barriecito', cursive;
+  font-family: 'kristimedium';
 }
 
 #hero h2 {
@@ -268,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-size: 40px;
   font-weight: 300;
-  font-family: 'Barriecito', cursive;
+  font-family: 'Cabin Sketch', cursive;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
@@ -293,11 +318,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 40px;
     line-height: 36px;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -311,7 +336,7 @@ section {
 }
 
 .section-bg {
-  background: linear-gradient(180deg, #80ccff52 0%, #ff3c8d50 100%);
+  background: linear-gradient(180deg, #dddcdd 0%, #ffbeefc9 100%);
 }
 
 .section-title {
@@ -319,14 +344,13 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
-  color: #ffcde1f5;
-  text-shadow: 2px 2px 2px #ff3c8d;
-  font-family: 'Barriecito', cursive;
+  color: #ff3c8d;
+  
+  font-family: 'Cabin Sketch', cursive;
 }
 
 .section-title h2::after {
@@ -401,7 +425,7 @@ section {
   font-weight: 500;
   font-size: 34px;
   color: #ff3c8d;
-  font-family: 'Barriecito', cursive;
+  font-family: 'Cabin Sketch', cursive;
 }
 
 .about .content p {
@@ -435,7 +459,7 @@ section {
   margin: 0 0 0 50px;
   font-family: 'Sue Ellen Francisco', cursive;
   font-size: 25px;
-  color:grey;
+  color:#b3b1b1;
 }
 
 .about .content .count-box a {
@@ -497,9 +521,9 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 16px;
-  color:#ff3c8d;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+  color:#b3b1b1;
 }
 
 .skills .progress .skill .val {
@@ -515,7 +539,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color:#ff3c8d;
+  background-color:#b3b1b1;
 }
 
 /*--------------------------------------------------------------
@@ -620,7 +644,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #ff3c8d;
+  background: #3cb1ff7e;
   transition: all 0.3s ease-in-out;
 }
 
@@ -637,7 +661,7 @@ section {
 }
 
 .services .title a {
-  color: grey;
+  color: #b3b1b1;
 }
 
 .services .description {
@@ -655,7 +679,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #ff3c8d;
+  color:#b3b1b1;
 }
 
 @media (max-width: 768px) {
@@ -689,7 +713,7 @@ section {
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
-  color:grey;
+  color:#b3b1b1grey;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   
@@ -970,7 +994,7 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #ff3c8d;
+  color: #b3b1b1;
 }
 
 .contact .contact-about p {
@@ -987,7 +1011,7 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #ff3c8d;
+  color: g#b3b1b1;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -996,16 +1020,16 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #ff3c8d80;
+  border: 1px solid #b3b1b1;
 }
 
 .contact .social-links a:hover {
-  background: #ff3c8d80;
+  background: #ffcde1f5;
   color: #fff;
 }
 
 .contact .info {
-  color: grey;
+  color: #b3b1b1;
 }
 
 .contact .info i {
@@ -1074,9 +1098,10 @@ section {
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 20px;
-  background-color:#ff3c8d50;
-  opacity:50%;
+  font-size: 30px;
+  background: linear-gradient(180deg, #dddcdd 0%, #ffbeefc9 100%);
+  /* background-color:#d31e81; */
+  opacity:40%;
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
@@ -1084,7 +1109,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ff3c8d;
+  background:rgb(250, 96, 160);
   border: 0;
   padding: 3px 24px;
   color: #fff;
@@ -1093,7 +1118,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #fb82b5;
+  background:#ffafcff5;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1113,7 +1138,21 @@ section {
     transform: rotate(360deg);
   }
 }
-
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:#fd2a82 !important;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 2px solid rgb(250, 96, 160); !important;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

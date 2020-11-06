@@ -93,7 +93,7 @@
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.12em solid #ff3c8d}";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.07em solid #ff3c8d}";
     document.body.appendChild(css);
   };
   // ========================================================================= //
